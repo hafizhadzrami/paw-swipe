@@ -59,8 +59,8 @@ function showFlashbook() {
   document.getElementById('photobook').style.display = 'block';
   document.getElementById('restart-btn').style.display = 'inline-block';
 
-  document.getElementById('like-count').textContent = liked.length;
-  document.getElementById('total-count').textContent = images.length;
+  document.getElementById('like-summary').textContent = `🐱 You liked ${liked.length} cats!`;
+
 
   if (liked.length > 0) {
     let index = 0;
