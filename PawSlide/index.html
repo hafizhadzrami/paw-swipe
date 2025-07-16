@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PawSwipe 🐾</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="flying-cats"></div>
+
+  <div class="app-box">
+    <div class="app-container">
+      <!-- Title -->
+      <div class="title-wrapper">
+        <h1 class="main-title">
+          🐾 <span class="white">Paw</span><span class="black">Swipe</span> 😸
+        </h1>
+        <p class="tagline">Swipe. Like. Meow.</p>
+      </div>
+
+      <!-- Main cat viewer -->
+      <div id="cat-container" class="card-stack"></div>
+      <div id="swipe-emotion" class="swipe-emotion"></div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button onclick="swipe('left')">❌</button>
+        <button onclick="swipe('right')">❤️</button>
+      </div>
+
+      <!-- Result Photobook -->
+      <div id="photobook" class="photobook-view" style="display:none;">
+        <h2>Your Cat Flashbook</h2>
+        <p class="photobook-subheading">
+          You liked <strong id="like-count"></strong> out of <strong id="total-count"></strong> cats!
+        </p>
+        <div class="photo-slider">
+          <button id="prev-btn">←</button>
+          <img id="slider-img" src="" alt="Liked Cat">
+          <button id="next-btn">→</button>
+        </div>
+      </div>
+
+      <!-- Restart Button -->
+      <div class="button-center">
+        <button id="restart-btn" onclick="restartApp()" style="display:none;">🔄 Try Again?</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
